@@ -4,8 +4,7 @@ pipeline {
     environment {
         // Docker environment (so Jenkins uses your local Docker)
         DOCKER_HOST = 'unix:///Users/aathreya/.docker/run/docker.sock'
-        DOCKER_CERT_PATH = '/Users/aathreya/.docker'
-        DOCKER_TLS_VERIFY = '1'
+        DOCKER_TLS_VERIFY = '0'
 
         // DockerHub credentials (already created in Jenkins)
         DOCKERHUB_CREDENTIALS = credentials('dockerhub-credentials')
